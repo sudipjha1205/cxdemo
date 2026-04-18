@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: cx_mongo
+    restart: unless-stopped
+    ports: ["27017:27017"]
+    volumes: [mongo_data:/data/db]
+    environment: { MONGO_INITDB_DATABASE: cxintelligence }
+
+  backend:
+    build: { context: ./backend, dockerfile: Dockerfile }
+    container_name: cx_backend
+    restart: unless-stopped
+    ports: ["8000:8000"]
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/cxintelligence
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes: [./backend:/app, uploads:/app/uploads]
+    depends_on: [mongodb]
+
+  frontend:
+    build: { context: ./frontend, dockerfile: Dockerfile }
+    container_name: cx_frontend
+    restart: unless-stopped
+    ports: ["5173:5173"]
+    volumes: [./frontend/src:/app/src]
+    depends_on: [backend]
+
+volumes:
+  mongo_data:
+  uploads:

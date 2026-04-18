@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: cxdemo-backend
+    runtime: python
+    rootDir: cxdemo/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 "app:create_app()"
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: WHISPER_PROVIDER
+        value: openai
+      - key: FRONTEND_URL
+        sync: false
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: false

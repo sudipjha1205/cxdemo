@@ -1,0 +1,53 @@
+.root { min-height: 100vh; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.orb1 { position: fixed; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(0,229,160,0.06), transparent 70%); top: -150px; right: -100px; pointer-events: none; }
+.orb2 { position: fixed; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(77,159,255,0.05), transparent 70%); bottom: -100px; left: -100px; pointer-events: none; }
+
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; border-bottom: 1px solid var(--bdr); background: rgba(8,12,18,0.9); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; }
+.backBtn { display: flex; align-items: center; gap: 6px; background: none; border: 1px solid var(--bdr); border-radius: var(--r1); color: var(--t2); font-size: 12px; font-family: var(--fb); padding: 5px 12px; cursor: pointer; transition: all 0.15s; }
+.backBtn:hover { color: var(--t1); border-color: rgba(255,255,255,0.15); }
+.logo { display: flex; align-items: center; gap: 9px; }
+.logoBadge { font-family: var(--fn); font-size: 12px; font-weight: 800; background: var(--brand); color: #080c12; padding: 3px 8px; border-radius: 5px; letter-spacing: 0.04em; }
+.logoTxt { font-family: var(--fn); font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+.statusPill { font-size: 11px; font-family: var(--fm); border: 1px solid var(--bdr); padding: 4px 11px; border-radius: 99px; }
+
+.main { flex: 1; max-width: 1200px; margin: 0 auto; padding: 32px 24px 80px; position: relative; z-index: 5; width: 100%; }
+
+/* Processing */
+.procWrap { max-width: 500px; margin: 60px auto; text-align: center; animation: fadeUp 0.5s var(--ease) both; }
+.scanner { width: 180px; height: 180px; background: var(--bg3); border: 1px solid var(--bdr); border-radius: var(--r2); position: relative; overflow: hidden; margin: 0 auto 32px; }
+.scanGrid { display: grid; grid-template-columns: repeat(7,1fr); gap: 2px; position: absolute; inset: 14px; opacity: 0.3; }
+.scanLine { position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(90deg,transparent,var(--brand),transparent); animation: scan 2.4s ease-in-out infinite; z-index: 2; }
+.scanRings { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 3; }
+.scanRings::before, .scanRings::after { content: ''; position: absolute; border-radius: 50%; }
+.scanRings::before { width: 72px; height: 72px; border: 1px solid rgba(0,229,160,0.2); animation: spin 4s linear infinite; }
+.scanRings::after { width: 50px; height: 50px; border: 1px dashed rgba(0,229,160,0.3); animation: spin 2.5s linear infinite reverse; }
+.scanIco { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 4; }
+.scanIco > div { width: 38px; height: 38px; background: var(--bg4); border: 1px solid rgba(0,229,160,0.3); border-radius: var(--r1); display: flex; align-items: center; justify-content: center; color: var(--brand); }
+.scanIco svg { width: 18px; height: 18px; }
+.procTitle { font-family: var(--fn); font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 7px; }
+.procSub { font-size: 13px; color: var(--t2); margin-bottom: 28px; line-height: 1.5; }
+.stepList { width: 100%; background: var(--bg3); border: 1px solid var(--bdr); border-radius: var(--r2); overflow: hidden; margin-bottom: 16px; text-align: left; }
+.step { display: flex; align-items: center; gap: 11px; padding: 11px 15px; border-bottom: 1px solid var(--bdr); opacity: 0.28; transition: all 0.35s; }
+.step:last-child { border-bottom: none; }
+.stepDone { opacity: 0.65; }
+.stepActive { opacity: 1; background: var(--brandm); }
+.stepInd { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.stepDone .stepInd { background: rgba(0,229,160,0.2); color: var(--brand); }
+.stepDot { width: 5px; height: 5px; border-radius: 50%; background: var(--t3); }
+.stepSpin { width: 13px; height: 13px; border: 2px solid rgba(0,229,160,0.2); border-top-color: var(--brand); border-radius: 50%; animation: spin 0.6s linear infinite; }
+.stepLabel { font-size: 12px; color: var(--t1); flex: 1; }
+.stepCursor { color: var(--brand); animation: pulse 0.8s ease-in-out infinite; }
+.procNote { font-size: 10px; color: var(--t3); font-family: var(--fm); }
+
+/* Error */
+.errorState { max-width: 480px; margin: 100px auto; text-align: center; }
+.errorIcon { font-size: 48px; margin-bottom: 16px; opacity: 0.5; }
+.errorState h2 { font-family: var(--fn); font-size: 24px; color: var(--t1); margin-bottom: 8px; }
+.errorState p { color: var(--t2); font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+.retryBtn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--bg3); border: 1px solid var(--bdr); border-radius: var(--r2); color: var(--t1); font-size: 14px; font-family: var(--fb); cursor: pointer; transition: all 0.15s; }
+.retryBtn:hover { border-color: rgba(255,255,255,0.2); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes scan { 0% { top: 0; opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
