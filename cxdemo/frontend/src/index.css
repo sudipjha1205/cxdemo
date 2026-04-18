@@ -26,3 +26,42 @@ body { font-family: var(--fb); background: var(--bg); color: var(--t1); line-hei
 
 .animate-fadeUp { animation: fadeUp 0.6s var(--ease) both; }
 .animate-fadeIn { animation: fadeIn 0.4s ease both; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  :root {
+    --r1: 6px; --r2: 12px; --r3: 16px;
+  }
+  html { font-size: 16px; }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --r1: 6px; --r2: 10px; --r3: 14px;
+  }
+  html { font-size: 15px; }
+  body { line-height: 1.5; }
+  ::-webkit-scrollbar { width: 3px; }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --r1: 4px; --r2: 8px; --r3: 12px;
+  }
+  html { font-size: 14px; }
+  body { line-height: 1.4; }
+  ::-webkit-scrollbar { width: 2px; }
+}
+
+/* Touch-friendly sizing for mobile */
+@media (max-width: 768px) and (hover: none) and (pointer: coarse) {
+  button, [role="button"], input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Tablet landscape optimization */
+@media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  html, body, #root { height: 100%; overflow: auto; }
+}

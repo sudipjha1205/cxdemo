@@ -26,3 +26,75 @@
 .ctaBtn { display: inline-flex; align-items: center; gap: 7px; padding: 10px 20px; background: var(--bg4); border: 1px solid var(--bdr); border-radius: var(--r1); color: var(--t2); font-size: 13px; font-family: var(--fb); cursor: pointer; transition: all 0.15s; }
 .ctaBtn svg { width: 13px; height: 13px; }
 .ctaBtn:hover { color: var(--t1); border-color: rgba(255,255,255,0.18); }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .hlGrid { gap: 8px; }
+  .hlItem { min-width: 150px; padding: 10px 12px; }
+}
+
+@media (max-width: 768px) {
+  .root { min-height: auto; }
+  .nav { padding: 10px 14px; }
+  .backBtn { padding: 4px 10px; font-size: 11px; gap: 5px; }
+  .logoBadge { font-size: 11px; padding: 2px 6px; }
+  .logoTxt { font-size: 12px; }
+  .main { padding: 20px 14px 60px; max-width: 100%; }
+  .banner { gap: 10px; padding: 14px 16px; }
+  .bannerIco { width: 36px; height: 36px; }
+  .bannerIco svg { width: 16px; height: 16px; }
+  .bannerTitle { font-size: 15px; margin-bottom: 2px; }
+  .bannerSub { font-size: 11px; }
+  .bannerBadge { font-size: 10px; padding: 4px 10px; }
+  .grid { grid-template-columns: 1fr; gap: 10px; }
+  .card { padding: 14px; border-radius: var(--r1); }
+  .cardLbl { font-size: 9px; margin-bottom: 10px; }
+  .summaryText { font-size: 12px; margin-bottom: 10px; }
+  .chips { gap: 5px; }
+  .chip { font-size: 10px; padding: 2px 8px; }
+  .kpList { gap: 7px; }
+  .kpItem { font-size: 11px; gap: 6px; }
+  .kpNum { width: 16px; height: 16px; font-size: 8px; }
+  .hlGrid { gap: 6px; }
+  .hlItem { min-width: 140px; padding: 9px 11px; }
+  .hlType { font-size: 8px; margin-bottom: 3px; }
+  .hlText { font-size: 10px; }
+  .cta { padding: 18px; border-radius: var(--r1); }
+  .ctaTitle { font-size: 14px; margin-bottom: 6px; }
+  .ctaSub { font-size: 11px; margin: 0 auto 12px; }
+  .ctaBtn { padding: 9px 16px; font-size: 12px; gap: 5px; }
+}
+
+@media (max-width: 480px) {
+  .nav { padding: 8px 10px; flex-wrap: wrap; gap: 8px; }
+  .backBtn { padding: 3px 8px; font-size: 10px; }
+  .logoBadge { font-size: 10px; padding: 2px 5px; }
+  .logoTxt { font-size: 11px; }
+  .main { padding: 14px 10px 50px; max-width: 100%; }
+  .root { gap: 10px; }
+  .banner { gap: 8px; padding: 10px 12px; }
+  .bannerIco { width: 32px; height: 32px; margin-bottom: 2px; }
+  .bannerIco svg { width: 14px; height: 14px; }
+  .bannerTitle { font-size: 13px; margin-bottom: 2px; }
+  .bannerSub { font-size: 10px; line-height: 1.4; }
+  .bannerBadge { font-size: 9px; padding: 3px 8px; }
+  .grid { gap: 8px; }
+  .card { padding: 12px; }
+  .fullCard { grid-column: 1 / -1; }
+  .cardLbl { font-size: 8px; margin-bottom: 8px; }
+  .summaryText { font-size: 11px; margin-bottom: 8px; line-height: 1.5; }
+  .chips { gap: 4px; }
+  .chip { font-size: 9px; padding: 2px 7px; }
+  .kpList { gap: 6px; }
+  .kpItem { font-size: 10px; gap: 6px; }
+  .kpNum { width: 16px; height: 16px; font-size: 7px; }
+  .hlGrid { grid-template-columns: 1fr; gap: 6px; }
+  .hlItem { min-width: auto; padding: 8px 10px; }
+  .hlType { font-size: 7px; margin-bottom: 3px; }
+  .hlText { font-size: 9px; }
+  .cta { padding: 14px; }
+  .ctaTitle { font-size: 13px; margin-bottom: 5px; }
+  .ctaSub { font-size: 10px; margin: 0 auto 10px; line-height: 1.4; }
+  .ctaBtn { padding: 8px 12px; font-size: 11px; }
+}

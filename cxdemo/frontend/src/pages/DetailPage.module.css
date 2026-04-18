@@ -58,3 +58,96 @@
 .ctaBtn2:hover { color: var(--t1); border-color: rgba(255,255,255,0.18); }
 
 .footer { padding: 20px; font-size: 10px; color: var(--t3); border-top: 1px solid var(--bdr); text-align: center; position: relative; z-index: 5; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .body { padding: 20px 20px 0; }
+  .probCard { padding: 20px; }
+  .solCard { padding: 20px; }
+  .howCard { padding: 20px; }
+  .metricsCard { padding: 20px; }
+  .metricsGrid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .statGrid { gap: 10px; }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 12px 16px; }
+  .hero { padding: 32px 16px 24px; }
+  .heroTitle { font-size: clamp(20px, 5vw, 36px); }
+  .heroSub { font-size: 13px; }
+  .body { padding: 16px 16px 0; gap: 12px; }
+  .statGrid { grid-template-columns: 1fr; }
+  .probCard { padding: 16px; }
+  .probTitle { font-size: 13px; margin-bottom: 4px; }
+  .probSub { font-size: 11px; margin-bottom: 14px; }
+  .probStat { padding: 12px; }
+  .probStatVal { font-size: 24px; }
+  .probStatLabel { font-size: 9px; }
+  .itemList { gap: 6px; }
+  .listItem { font-size: 11px; gap: 7px; }
+  .solCard { padding: 16px; }
+  .solTitle { font-size: 13px; }
+  .howCard { padding: 16px; }
+  .sectionTitle { font-size: 12px; margin-bottom: 12px; }
+  .howSteps { gap: 10px; }
+  .howStep { padding: 12px; gap: 10px; }
+  .howStepNum { width: 24px; height: 24px; font-size: 10px; }
+  .howStepLabel { font-size: 12px; }
+  .howStepSub { font-size: 10px; }
+  .metricsCard { padding: 16px; }
+  .metricsGrid { grid-template-columns: 1fr; gap: 8px; }
+  .metricItem { padding: 10px; }
+  .metricLabel { font-size: 10px; }
+  .metricSub { font-size: 9px; }
+  .ctaCard { padding: 20px; }
+  .ctaTitle { font-size: 16px; }
+  .ctaSub { font-size: 12px; }
+  .ctaBtns { gap: 8px; }
+  .ctaBtn1 { padding: 10px 18px; font-size: 12px; }
+  .ctaBtn2 { padding: 10px 18px; font-size: 12px; }
+  .footer { padding: 14px; font-size: 9px; }
+}
+
+@media (max-width: 480px) {
+  .nav { padding: 10px 12px; }
+  .backBtn { padding: 4px 8px; font-size: 11px; gap: 4px; }
+  .logoBadge { font-size: 11px; padding: 2px 6px; }
+  .logoTxt { font-size: 13px; }
+  .hero { padding: 24px 12px 16px; border-bottom: none; }
+  .heroPill { font-size: 9px; padding: 3px 10px; margin-bottom: 12px; }
+  .heroTitle { font-size: clamp(18px, 5vw, 32px); }
+  .heroSub { font-size: 12px; line-height: 1.5; }
+  .body { padding: 12px 12px 0; gap: 10px; }
+  .statGrid { grid-template-columns: 1fr; gap: 8px; }
+  .probCard { padding: 12px; border-radius: var(--r2); }
+  .probTitle { font-size: 12px; gap: 6px; }
+  .probSub { font-size: 10px; margin-bottom: 10px; }
+  .probStat { padding: 10px; }
+  .probStatVal { font-size: 20px; margin-bottom: 2px; }
+  .probStatLabel { font-size: 8px; }
+  .itemList { gap: 5px; }
+  .listItem { font-size: 10px; gap: 6px; }
+  .solCard { padding: 12px; }
+  .solTitle { font-size: 12px; gap: 6px; margin-bottom: 4px; }
+  .solStatVal { font-size: 20px; }
+  .solStat { padding: 10px; }
+  .howCard { padding: 12px; }
+  .sectionTitle { font-size: 11px; margin-bottom: 10px; }
+  .howSteps { gap: 8px; }
+  .howStep { padding: 10px; gap: 8px; }
+  .howStepNum { width: 22px; height: 22px; font-size: 9px; }
+  .howStepLabel { font-size: 11px; }
+  .howStepSub { font-size: 9px; }
+  .metricsCard { padding: 12px; }
+  .metricsGrid { grid-template-columns: 1fr; gap: 6px; }
+  .metricItem { padding: 8px; }
+  .metricLabel { font-size: 9px; }
+  .metricSub { font-size: 8px; }
+  .ctaCard { padding: 16px; }
+  .ctaTitle { font-size: 14px; }
+  .ctaSub { font-size: 11px; margin-bottom: 12px; }
+  .ctaBtns { flex-direction: column; gap: 6px; }
+  .ctaBtn1 { width: 100%; justify-content: center; padding: 10px 16px; font-size: 11px; }
+  .ctaBtn2 { width: 100%; justify-content: center; padding: 10px 16px; font-size: 11px; }
+  .footer { padding: 10px; font-size: 8px; }
+}

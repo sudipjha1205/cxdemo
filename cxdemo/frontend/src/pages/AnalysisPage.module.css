@@ -51,3 +51,68 @@
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @keyframes scan { 0% { top: 0; opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main { padding: 24px 20px 60px; }
+  .procWrap { max-width: 100%; margin: 40px 20px; }
+  .scanner { width: 150px; height: 150px; }
+  .procTitle { font-size: 20px; }
+  .procSub { font-size: 12px; }
+  .stepList { margin-bottom: 14px; }
+  .step { padding: 10px 12px; gap: 8px; }
+  .stepLabel { font-size: 11px; }
+  .errorState { margin: 60px 20px; }
+  .errorIcon { font-size: 40px; }
+  .errorState h2 { font-size: 20px; }
+  .errorState p { font-size: 13px; }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 10px 14px; }
+  .backBtn { padding: 4px 10px; font-size: 11px; gap: 5px; }
+  .logoBadge { font-size: 11px; padding: 2px 6px; }
+  .logoTxt { font-size: 12px; }
+  .statusPill { font-size: 10px; padding: 3px 9px; }
+  .main { padding: 20px 14px 50px; }
+  .procWrap { max-width: 100%; margin: 40px 12px; }
+  .scanner { width: 140px; height: 140px; margin: 0 auto 24px; }
+  .procTitle { font-size: 18px; margin-bottom: 4px; }
+  .procSub { font-size: 11px; margin-bottom: 20px; }
+  .stepList { margin-bottom: 12px; }
+  .step { padding: 8px 10px; gap: 8px; font-size: 11px; }
+  .stepInd { width: 18px; height: 18px; }
+  .stepLabel { font-size: 10px; }
+  .stepDot { width: 4px; height: 4px; }
+  .stepSpin { width: 11px; height: 11px; border-width: 1.5px; }
+  .procNote { font-size: 9px; }
+  .errorState { margin: 40px 12px; max-width: 100%; }
+  .errorIcon { font-size: 36px; }
+  .errorState h2 { font-size: 18px; }
+  .errorState p { font-size: 12px; margin-bottom: 16px; }
+  .retryBtn { padding: 8px 16px; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .nav { padding: 8px 10px; flex-wrap: wrap; gap: 10px; }
+  .backBtn { padding: 3px 8px; font-size: 10px; }
+  .logoBadge { font-size: 10px; padding: 2px 5px; }
+  .logoTxt { font-size: 11px; }
+  .statusPill { font-size: 9px; padding: 2px 8px; }
+  .main { padding: 16px 10px 40px; }
+  .procWrap { max-width: 100%; margin: 30px 8px; }
+  .scanner { width: 120px; height: 120px; margin: 0 auto 20px; border-radius: 10px; }
+  .procTitle { font-size: 16px; margin-bottom: 3px; }
+  .procSub { font-size: 10px; margin-bottom: 16px; }
+  .stepList { margin-bottom: 10px; }
+  .step { padding: 6px 8px; gap: 6px; font-size: 10px; }
+  .stepInd { width: 16px; height: 16px; }
+  .stepLabel { font-size: 9px; }
+  .stepCursor { display: none; }
+  .procNote { font-size: 8px; }
+  .errorState { margin: 30px 8px; }
+  .errorIcon { font-size: 32px; margin-bottom: 12px; }
+  .errorState h2 { font-size: 16px; margin-bottom: 6px; }
+  .errorState p { font-size: 11px; margin-bottom: 14px; line-height: 1.4; }
+  .retryBtn { padding: 8px 14px; font-size: 11px; }
+}

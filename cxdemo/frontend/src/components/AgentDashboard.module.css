@@ -130,3 +130,244 @@
 .ctaBtn2 { display: flex; align-items: center; gap: 7px; padding: 11px 22px; background: none; color: var(--t2); border: 1px solid var(--bdr); border-radius: var(--r1); font-size: 13px; font-family: var(--fb); cursor: pointer; transition: all 0.2s; }
 .ctaBtn2 svg { width: 14px; height: 14px; }
 .ctaBtn2:hover { color: var(--t1); border-color: rgba(255,255,255,0.18); }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hdr { flex-direction: column; gap: 14px; padding: 18px 20px; }
+  .hdrMeta { align-items: flex-start; }
+  .impactBar { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 14px 16px; }
+  .impVal { font-size: 20px; }
+  .impLabel { font-size: 9px; }
+  .r3 { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .r2 { gap: 12px; }
+  .r4 { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .card { padding: 14px; }
+  .ringWrap { width: 100px; height: 100px; }
+  .ringVal { font-size: 24px; }
+  .ringLbl { font-size: 8px; }
+  .scoreWrap { gap: 4px; }
+  .sentFlow { gap: 4px; }
+  .sbadge { font-size: 9px; padding: 1px 7px; }
+  .sentArrow { font-size: 12px; margin-top: 6px; }
+  .compList { gap: 5px; }
+  .compItem { gap: 6px; }
+  .compItemL { font-size: 10px; }
+  .compFlag { font-size: 9px; padding: 2px 6px; }
+  .mbars { gap: 8px; }
+  .mbarHdr { margin-bottom: 3px; }
+  .mbarLbl { font-size: 10px; }
+  .mbarVal { font-size: 10px; }
+  .solveBar { gap: 12px; }
+  .solveColin { padding: 14px; }
+  .solveTitle { font-size: 11px; }
+  .solveItem { font-size: 10px; gap: 6px; }
+  .bizGrid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .bizItem { padding: 12px; }
+  .bizIco { width: 24px; height: 24px; margin-bottom: 6px; }
+  .bizItemL { font-size: 11px; }
+  .bizItemS { font-size: 10px; }
+  .bizItemV { font-size: 18px; margin-top: 4px; }
+  .mcard { padding: 10px 12px; }
+  .mcardL { font-size: 9px; }
+  .mcardV { font-size: 16px; }
+  .xcardHead { padding: 12px 14px; }
+  .xcardTitle { font-size: 12px; gap: 7px; }
+  .xcardBody { padding: 0 14px 14px; padding-top: 10px; }
+  .swItem { padding: 10px; }
+  .swItemHdr { gap: 6px; }
+  .swItemTitle { font-size: 11px; }
+  .impBadge { font-size: 8px; padding: 1px 6px; }
+  .swItemDesc { font-size: 10px; }
+  .momItem { gap: 10px; padding: 8px 0; }
+  .momMeta { gap: 7px; margin-bottom: 2px; }
+  .momType { font-size: 9px; }
+  .momTime { font-size: 8px; }
+  .momText { font-size: 10px; }
+  .coachItem { padding: 10px; }
+  .coachArea { font-size: 11px; }
+  .coachRec { font-size: 10px; margin-bottom: 4px; }
+  .ctaFooter { padding: 20px; }
+  .ctaTitle { font-size: 16px; }
+  .ctaSub { font-size: 12px; margin-bottom: 14px; }
+  .ctaBtns { gap: 8px; }
+  .ctaBtn1 { padding: 10px 18px; font-size: 12px; }
+  .ctaBtn2 { padding: 10px 18px; font-size: 12px; }
+}
+
+@media (max-width: 768px) {
+  .root { gap: 10px; }
+  .hdr { padding: 14px 16px; }
+  .hdrPill { font-size: 9px; padding: 2px 8px; margin-bottom: 6px; }
+  .hdrTitle { font-size: 18px; margin-bottom: 4px; }
+  .hdrSub { font-size: 11px; max-width: 100%; line-height: 1.5; }
+  .hdrMeta { gap: 4px; }
+  .metaChip { font-size: 10px; gap: 3px; }
+  .metaTag { font-size: 10px; padding: 4px 8px; max-width: 100%; }
+  .impactBar { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 12px 14px; }
+  .impItem { text-align: center; }
+  .impVal { font-size: 18px; margin-bottom: 2px; }
+  .impLabel { font-size: 8px; }
+  .impSub { font-size: 9px; margin-top: 2px; }
+  .r3 { grid-template-columns: 1fr; gap: 10px; }
+  .r2 { grid-template-columns: 1fr; gap: 10px; }
+  .r4 { grid-template-columns: 1fr; gap: 8px; }
+  .card { padding: 12px; }
+  .cardLbl { font-size: 9px; margin-bottom: 10px; gap: 4px; }
+  .scoreWrap { gap: 4px; }
+  .ringWrap { width: 90px; height: 90px; }
+  .ringVal { font-size: 20px; }
+  .ringLbl { font-size: 7px; }
+  .sentFlow { gap: 3px; margin-bottom: 10px; }
+  .sentPhase { gap: 2px; }
+  .sentPhLbl { font-size: 8px; }
+  .sbadge { font-size: 8px; padding: 1px 6px; }
+  .sentArrow { font-size: 11px; margin-top: 5px; }
+  .sentFinal { gap: 7px; padding-top: 8px; }
+  .sentFinLbl { font-size: 10px; }
+  .compList { gap: 4px; }
+  .compItem { gap: 6px; }
+  .compDot { width: 5px; height: 5px; }
+  .compItemL { font-size: 9px; }
+  .compFlag { font-size: 8px; padding: 2px 5px; }
+  .mbars { gap: 8px; }
+  .mbarHdr { margin-bottom: 3px; }
+  .mbarLbl { font-size: 9px; }
+  .mbarVal { font-size: 9px; }
+  .solveBar { grid-template-columns: 1fr; gap: 10px; }
+  .solveColin { padding: 12px; }
+  .solveTitle { font-size: 10px; margin-bottom: 8px; gap: 5px; }
+  .solveItem { font-size: 9px; gap: 6px; margin-bottom: 6px; }
+  .bizCard { padding: 16px; }
+  .bizTitle { font-size: 13px; margin-bottom: 3px; }
+  .bizSub { font-size: 11px; margin-bottom: 12px; }
+  .bizGrid { grid-template-columns: 1fr; gap: 8px; }
+  .bizItem { padding: 10px; }
+  .bizIco { width: 24px; height: 24px; margin-bottom: 6px; }
+  .bizItemL { font-size: 10px; }
+  .bizItemS { font-size: 9px; }
+  .bizItemV { font-size: 16px; margin-top: 4px; }
+  .mcard { padding: 10px 12px; }
+  .mcardL { font-size: 9px; }
+  .mcardV { font-size: 14px; }
+  .mcardS { font-size: 9px; }
+  .xcard { border-radius: var(--r1); }
+  .xcardHead { padding: 10px 12px; }
+  .xcardTitle { font-size: 11px; gap: 6px; }
+  .xiBox { width: 22px; height: 22px; }
+  .xcardBody { padding: 0 12px 12px; padding-top: 8px; }
+  .swList { gap: 8px; }
+  .swItem { padding: 10px; border-radius: var(--r1); }
+  .swItemHdr { gap: 6px; margin-bottom: 3px; }
+  .swItemTitle { font-size: 10px; }
+  .impBadge { font-size: 8px; padding: 1px 5px; }
+  .swItemDesc { font-size: 9px; line-height: 1.4; }
+  .swQuote { margin-top: 5px; font-size: 9px; }
+  .bizTag { margin-top: 5px; font-size: 9px; padding: 3px 6px; }
+  .momList { gap: 2px; }
+  .momItem { gap: 10px; padding: 7px 0; }
+  .momDot { width: 6px; height: 6px; margin-top: 4px; }
+  .momMeta { gap: 6px; margin-bottom: 2px; }
+  .momType { font-size: 8px; }
+  .momTime { font-size: 7px; }
+  .momText { font-size: 9px; }
+  .coachList { gap: 8px; }
+  .coachItem { padding: 10px; }
+  .coachHdr { margin-bottom: 4px; }
+  .coachArea { font-size: 10px; }
+  .coachPri { font-size: 8px; padding: 1px 5px; }
+  .coachRec { font-size: 9px; margin-bottom: 4px; }
+  .coachMod { font-size: 8px; padding: 2px 5px; margin-bottom: 3px; }
+  .coachBiz { font-size: 9px; margin-bottom: 3px; }
+  .ctaFooter { padding: 16px; border-radius: var(--r2); }
+  .ctaTitle { font-size: 14px; margin-bottom: 4px; }
+  .ctaSub { font-size: 11px; margin-bottom: 10px; }
+  .ctaBtns { gap: 6px; }
+  .ctaBtn1 { padding: 9px 16px; font-size: 11px; }
+  .ctaBtn2 { padding: 9px 16px; font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .root { gap: 8px; }
+  .hdr { padding: 10px 12px; gap: 10px; }
+  .hdrPill { font-size: 8px; padding: 2px 7px; margin-bottom: 4px; }
+  .hdrTitle { font-size: 16px; margin-bottom: 3px; }
+  .hdrSub { font-size: 10px; line-height: 1.4; }
+  .hdrMeta { gap: 3px; align-items: flex-start; }
+  .metaChip { font-size: 9px; gap: 2px; }
+  .metaTag { font-size: 9px; padding: 3px 6px; }
+  .impactBar { grid-template-columns: 1fr 1fr; gap: 6px; padding: 10px 12px; }
+  .impVal { font-size: 16px; margin-bottom: 1px; }
+  .impLabel { font-size: 7px; }
+  .impSub { font-size: 8px; margin-top: 1px; }
+  .r3 { grid-template-columns: 1fr; gap: 8px; }
+  .r2 { grid-template-columns: 1fr; gap: 8px; }
+  .r4 { grid-template-columns: 1fr; gap: 6px; }
+  .card { padding: 10px; }
+  .cardLbl { font-size: 8px; margin-bottom: 8px; gap: 3px; }
+  .scoreWrap { gap: 3px; }
+  .ringWrap { width: 80px; height: 80px; }
+  .ringVal { font-size: 18px; }
+  .ringLbl { font-size: 6px; }
+  .sentFlow { gap: 3px; margin-bottom: 8px; flex-wrap: wrap; }
+  .sentPhase { gap: 2px; }
+  .sentPhLbl { font-size: 7px; }
+  .sbadge { font-size: 7px; padding: 1px 5px; }
+  .sentArrow { display: none; }
+  .sentFinal { gap: 6px; padding-top: 6px; }
+  .sentFinLbl { font-size: 9px; }
+  .compList { gap: 3px; }
+  .compItem { gap: 5px; }
+  .compDot { width: 4px; height: 4px; }
+  .compItemL { font-size: 8px; }
+  .compFlag { font-size: 7px; padding: 1px 4px; }
+  .mbars { gap: 6px; }
+  .mbarLbl { font-size: 8px; }
+  .mbarVal { font-size: 8px; }
+  .solveBar { grid-template-columns: 1fr; gap: 8px; }
+  .solveColin { padding: 10px; }
+  .solveTitle { font-size: 9px; margin-bottom: 6px; gap: 4px; }
+  .solveItem { font-size: 8px; gap: 5px; margin-bottom: 4px; }
+  .bizCard { padding: 12px; }
+  .bizTitle { font-size: 12px; margin-bottom: 2px; }
+  .bizSub { font-size: 10px; margin-bottom: 8px; }
+  .bizGrid { grid-template-columns: 1fr; gap: 6px; }
+  .bizItem { padding: 8px; }
+  .bizIco { width: 20px; height: 20px; margin-bottom: 4px; }
+  .bizItemL { font-size: 9px; }
+  .bizItemS { font-size: 8px; }
+  .bizItemV { font-size: 14px; margin-top: 3px; }
+  .mcard { padding: 8px 10px; }
+  .mcardL { font-size: 8px; }
+  .mcardV { font-size: 13px; }
+  .mcardS { font-size: 8px; }
+  .xcardHead { padding: 8px 10px; }
+  .xcardTitle { font-size: 10px; gap: 5px; }
+  .xiBox { width: 20px; height: 20px; }
+  .xcardBody { padding: 0 10px 10px; padding-top: 6px; }
+  .swList { gap: 6px; }
+  .swItem { padding: 8px; }
+  .swItemHdr { gap: 4px; margin-bottom: 2px; }
+  .swItemTitle { font-size: 9px; }
+  .impBadge { font-size: 7px; padding: 1px 4px; }
+  .swItemDesc { font-size: 8px; }
+  .swQuote { margin-top: 4px; font-size: 8px; padding-left: 6px; }
+  .bizTag { margin-top: 4px; font-size: 8px; padding: 2px 5px; }
+  .momItem { gap: 8px; padding: 5px 0; }
+  .momMeta { gap: 5px; margin-bottom: 1px; }
+  .momType { font-size: 7px; }
+  .momTime { font-size: 6px; }
+  .momText { font-size: 8px; }
+  .coachList { gap: 6px; }
+  .coachItem { padding: 8px; }
+  .coachArea { font-size: 9px; }
+  .coachPri { font-size: 7px; padding: 1px 4px; }
+  .coachRec { font-size: 8px; margin-bottom: 3px; }
+  .coachMod { font-size: 7px; padding: 1px 4px; margin-bottom: 2px; }
+  .coachBiz { font-size: 8px; margin-bottom: 2px; }
+  .ctaFooter { padding: 12px; }
+  .ctaTitle { font-size: 13px; margin-bottom: 3px; }
+  .ctaSub { font-size: 10px; margin-bottom: 8px; line-height: 1.4; }
+  .ctaBtns { flex-direction: column; gap: 6px; }
+  .ctaBtn1 { width: 100%; justify-content: center; padding: 8px 14px; font-size: 10px; }
+  .ctaBtn2 { width: 100%; justify-content: center; padding: 8px 14px; font-size: 10px; }
+}

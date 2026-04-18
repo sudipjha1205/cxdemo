@@ -142,3 +142,87 @@
 .footer { padding: 24px; font-size: 12px; color: var(--t3); border-top: 1px solid var(--bdr); width: 100%; text-align: center; position: relative; z-index: 5; }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main { padding: 48px 24px 40px; }
+  .heroTitle { font-size: clamp(36px, 5vw, 68px); }
+  .heroTitleLine2 { font-size: clamp(36px, 5vw, 68px); }
+  .stats { flex-direction: column; }
+  .stat { border-right: none; border-bottom: 1px solid var(--bdr); padding: 14px 24px; }
+  .stat:last-child { border-bottom: none; }
+  .hiwRow { grid-template-columns: repeat(2, 1fr); }
+  .featureGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+  .main { padding: 48px 16px 40px; }
+  .heroTitle { font-size: clamp(28px, 7vw, 48px); }
+  .heroTitleLine2 { font-size: clamp(28px, 7vw, 48px); }
+  .heroSub { font-size: 16px; margin-bottom: 32px; }
+  .stats { gap: 0; }
+  .ucard { padding: 24px 18px; max-width: 100%; }
+  .ucardTitle { font-size: 18px; }
+  .ucardSub { font-size: 13px; }
+  .dz { padding: 32px 16px; margin-bottom: 12px; }
+  .dzTitle { font-size: 15px; }
+  .dzIco { width: 44px; height: 44px; }
+  .pasteArea { min-height: 140px; padding: 14px; font-size: 13px; }
+  .tabs { margin-bottom: 16px; }
+  .tab { padding: 9px 8px; font-size: 12px; }
+  .hiwRow { grid-template-columns: 1fr; gap: 8px; }
+  .hiwStep { padding: 16px 12px; }
+  .hiwArrow { display: none; }
+  .hiwLabel { font-size: 12px; }
+  .featureGrid { max-width: 100%; }
+  .fcard { padding: 16px; }
+  .fcardLabel { font-size: 14px; }
+  .fcardDesc { font-size: 12px; }
+  .footer { padding: 16px; font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .nav { padding: 12px 14px; }
+  .logoBadge { font-size: 12px; padding: 3px 7px; }
+  .logoTxt { font-size: 15px; }
+  .main { padding: 32px 12px 32px; }
+  .heroEyebrow { margin-bottom: 16px; font-size: 11px; }
+  .heroTitle { font-size: clamp(24px, 6vw, 40px); }
+  .heroTitleLine2 { font-size: clamp(24px, 6vw, 40px); }
+  .heroSub { font-size: 14px; margin-bottom: 24px; max-width: 100%; }
+  .stats { gap: 0; }
+  .stat { padding: 10px 16px; }
+  .statVal { font-size: 22px; }
+  .statLabel { font-size: 10px; }
+  .ucard { padding: 18px 14px; }
+  .ucardTitle { font-size: 16px; margin-bottom: 4px; }
+  .ucardSub { font-size: 12px; margin-bottom: 16px; }
+  .dz { padding: 24px 12px; }
+  .dzIco { width: 40px; height: 40px; }
+  .dzTitle { font-size: 14px; margin-bottom: 4px; }
+  .dzFormats { font-size: 12px; }
+  .filePrev { flex-direction: column; gap: 10px; }
+  .fileInfo { text-align: center; }
+  .fileRemove { width: 28px; height: 28px; }
+  .pasteWrap { margin-bottom: 12px; }
+  .pasteArea { min-height: 120px; padding: 12px; }
+  .pasteFooter { flex-direction: column; gap: 8px; }
+  .pasteCount { order: 2; }
+  .sampleBtn { order: 1; }
+  .analyseBtn { padding: 14px 20px; font-size: 15px; }
+  .hiw { max-width: 100%; margin-top: 32px; }
+  .hiwRow { gap: 6px; }
+  .hiwStep { padding: 12px 10px; }
+  .hiwLabel { font-size: 11px; }
+  .hiwSub { font-size: 11px; }
+  .hiwIco { width: auto; }
+  .hiwIco svg { width: 18px; height: 18px; }
+  .fcard { padding: 14px; }
+  .fcardIco { width: 32px; height: 32px; }
+  .fcardIco svg { width: 16px; height: 16px; }
+  .fcardLabel { font-size: 13px; }
+  .fcardDesc { font-size: 11px; }
+  .fcardBadge { font-size: 10px; }
+  .footer { padding: 12px; }
+}
