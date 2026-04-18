@@ -43,7 +43,7 @@ ENABLE_AUDIO_TRANSCRIPTION = True
 ENABLE_MULTI_LANGUAGE = True
 
 # ── CORS ───────────────────────────────────────────────────────────────────
-_frontend_url = os.getenv("FRONTEND_URL", "")
+_frontend_url = os.getenv("FRONTEND_URL", "").rstrip("/")
 ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3000",
