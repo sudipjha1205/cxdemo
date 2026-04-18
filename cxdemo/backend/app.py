@@ -7,7 +7,7 @@ import os
 def create_app():
     app = Flask(__name__)
     from constants import ALLOWED_ORIGINS, MONGO_URI
-    CORS(app, origins=ALLOWED_ORIGINS)
+    CORS(app, origins="*", supports_credentials=False)
 
     app.config["MONGO_URI"] = MONGO_URI
     app.config["MAX_CONTENT_LENGTH"] = 100 * 1024 * 1024
